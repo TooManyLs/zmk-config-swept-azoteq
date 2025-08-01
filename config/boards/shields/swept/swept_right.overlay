@@ -20,15 +20,3 @@
 		, <&pro_micro 21 GPIO_ACTIVE_HIGH>
 		;
 };
-
-&i2c1 {
-    iqs5xx: iqs5xx@74 {
-        compatible = "azoteq,iqs5xx";
-        reg = <0x74>;
-	// same pin like niceview
-        dr-gpios = <&gpio0 1 GPIO_ACTIVE_LOW>;
-        x-invert = <false>;
-        y-invert = <false>;
-        no-taps = <false>;
-    };
-};
