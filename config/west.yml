@@ -2,10 +2,21 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: TooManyLs
+      url-base: https://github.com/TooManyLs
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
+    
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: azoteq-input-module # <-- enable the drivers
+      remote: TooManyLs
+      revision: main
+    - name: zmk-azoteq-adapter # <-- enable this module
+      remote: mctechnology17
+      revision: main
   self:
     path: config

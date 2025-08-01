@@ -24,6 +24,6 @@ include:
   - board: nice_nano_v2
     shield: swept_left
   - board: nice_nano_v2
-    shield: swept_right
+    shield: swept_right azoteq_adapter_right
   - board: nice_nano_v2
     shield: settings_reset
