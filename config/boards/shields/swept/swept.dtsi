@@ -60,3 +60,15 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
 	};
 
 };
+
+&i2c1 {
+    iqs5xx: iqs5xx@74 {
+        compatible = "azoteq,iqs5xx";
+        reg = <0x74>;
+	// same pin like niceview
+        dr-gpios = <&gpio0 1 GPIO_ACTIVE_LOW>;
+        x-invert = <false>;
+        y-invert = <false>;
+        no-taps = <false>;
+    };
+};
