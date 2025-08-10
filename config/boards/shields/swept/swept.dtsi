@@ -66,8 +66,8 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
         compatible = "azoteq,iqs5xx";
         reg = <0x74>;
         dr-gpios = <&gpio0 1 GPIO_ACTIVE_LOW>;
-        x-invert = 0;
-        y-invert = 0;
-        no-taps = 0;
+        x-invert = <0>;
+        y-invert = <0>;
+        no-taps = <0>;
     };
 };
