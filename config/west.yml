@@ -13,7 +13,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: azoteq-input-module # <-- enable the drivers
-      remote: TooManyLs
+      remote: mctechnology17
       revision: main
     - name: zmk-azoteq-adapter # <-- enable this module
       remote: mctechnology17
