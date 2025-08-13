@@ -51,6 +51,6 @@
     };
 };
 
-&glidepoint_split {
+&tps43_split {
     device = <&tps43>;
 };
