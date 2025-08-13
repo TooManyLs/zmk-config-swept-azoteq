@@ -68,15 +68,15 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
     };
 };
 
-&arduino_i2c {
+&i2c0 {
     status = "okay";
     tps43: iqs5xx@74 {
         status = "okay";
         compatible = "azoteq,iqs5xx";
         reg = <0x74>;
 
-        reset-gpios = <&arduino_header 0 GPIO_ACTIVE_LOW>;
-        rdy-gpios = <&arduino_header 1 GPIO_ACTIVE_HIGH>;
+        reset-gpios = <&pro_micro 0 GPIO_ACTIVE_LOW>;
+        rdy-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
 
         /*
          * Potentially non-exhaustive list of configuration options.
