@@ -21,11 +21,9 @@
 include:
   - board: nice_nano_v2
     shield: swept_dongle
-    snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: swept_left
   - board: nice_nano_v2
-    shield: swept_right azoteq_adapter_right
-    snippet: zmk-usb-logging
+    shield: swept_right
   - board: nice_nano_v2
     shield: settings_reset
