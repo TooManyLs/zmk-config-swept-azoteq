@@ -17,11 +17,13 @@
 		;
 };
 
-tps43_input: tps43_input {
+/ {
+    tps43_input: tps43_input {
         compatible = "zmk,input-listener";
-        status = "disabled";
         device = <&tps43>;
+		status = "disabled";
     };
+};
 
     split_inputs {
         #address-cells = <1>;
