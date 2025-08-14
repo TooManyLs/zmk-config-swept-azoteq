@@ -21,13 +21,6 @@ config ZMK_POINTING
 
 endif
 
-if SHIELD_SWEPT_RIGHT
-
-config I2C
-	default y
-
-endif
-
 if SHIELD_SWEPT_LEFT || SHIELD_SWEPT_RIGHT || SHIELD_SWEPT_DONGLE 
 
 config ZMK_SPLIT

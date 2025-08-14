@@ -59,20 +59,52 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
 		
 	};
 
-	split_inputs {
+	tps43_input: tps43_input {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&tps43>;
+    };
+
+};
+
+&pro_micro_i2c {
+    status = "okay";
+    tps43: iqs5xx@74 {
+        status = "okay";
+        compatible = "azoteq,iqs5xx";
+        reg = <0x74>;
+
+        reset-gpios = <&pro_micro 0 GPIO_ACTIVE_LOW>;
+        rdy-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
+
+        /*
+         * Potentially non-exhaustive list of configuration options.
+         * See: dts/bindings/input/azoteq,iqs5xx-common.yaml for a full list.
+         */
+        one-finger-tap;
+        press-and-hold;
+        press-and-hold-time = <250>;
+        two-finger-tap;
+
+        scroll;
+        natural-scroll-y;
+        natural-scroll-x;
+
+        bottom-beta = <5>;
+        stationary-threshold = <5>;
+
+        switch-xy;
+    };
+};
+
+/ {
+    split_inputs {
         #address-cells = <1>;
         #size-cells = <0>;
 
-        tps43_split: tps43_split@0 {
+        tps43_split: tps43_split@74 {
             compatible = "zmk,input-split";
             reg = <0>;
         };
     };
-
-    tps43_listener: tps43_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&tps43_split>;
-    };
-
 };
