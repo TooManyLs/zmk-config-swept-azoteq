@@ -23,7 +23,6 @@
         device = <&tps43>;
 		status = "disabled";
     };
-};
 
     split_inputs {
         #address-cells = <1>;
@@ -34,3 +33,4 @@
             reg = <0>;
         };
     };
+};
