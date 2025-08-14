@@ -16,3 +16,19 @@
 		, <&pro_micro 21 GPIO_ACTIVE_HIGH>
 		;
 };
+
+tps43_input: tps43_input {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&tps43>;
+    };
+
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        tps43_split: tps43_split@74 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
+    };

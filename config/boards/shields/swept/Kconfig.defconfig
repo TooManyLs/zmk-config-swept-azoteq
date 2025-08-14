@@ -14,13 +14,6 @@ config ZMK_USB
 
 endif
 
-if SHIELD_SWEPT_DONGLE || SHIELD_SWEPT_RIGHT
-
-config ZMK_POINTING
-	default y
-
-endif
-
 if SHIELD_SWEPT_LEFT || SHIELD_SWEPT_RIGHT || SHIELD_SWEPT_DONGLE 
 
 config ZMK_SPLIT
@@ -32,4 +25,7 @@ config ZMK_BLE
 config I2C
 	default y
       
+config ZMK_POINTING
+	default y
+
 endif
