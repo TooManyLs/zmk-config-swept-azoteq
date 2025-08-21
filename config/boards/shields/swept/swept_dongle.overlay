@@ -17,20 +17,6 @@
 		;
 };
 
-/ {
-    tps43_input: tps43_input {
-        compatible = "zmk,input-listener";
-        device = <&tps43>;
-		status = "disabled";
-    };
-
-    split_inputs {
-        #address-cells = <1>;
-        #size-cells = <0>;
-
-        tps43_split: tps43_split@74 {
-            compatible = "zmk,input-split";
-            reg = <0>;
-        };
-    };
+&tps43_listener {
+    status = "okay";
 };
