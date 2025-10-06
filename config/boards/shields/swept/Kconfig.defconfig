@@ -28,4 +28,7 @@ config I2C
 config ZMK_POINTING
 	default y
 
+config ZMK_POINTING_SMOOTH_SCROLLING
+	default y
+
 endif
