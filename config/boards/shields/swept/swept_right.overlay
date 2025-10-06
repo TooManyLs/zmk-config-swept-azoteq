@@ -41,10 +41,9 @@
         two-finger-tap;
 
         scroll;
-        natural-scroll-y = false;
         natural-scroll-x;
 
-        bottom-beta = <5>;
+        bottom-beta = <15>;
         stationary-threshold = <5>;
 
         switch-xy;
