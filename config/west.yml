@@ -4,13 +4,15 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: AYM1607
       url-base: https://github.com/AYM1607
+    - name: TooManyLs
+      url-base: https://github.com/TooManyLs
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: zmk-driver-azoteq-iqs5xx
-      remote: AYM1607
+      remote: TooManyLs
       revision: main
   self:
     path: config
