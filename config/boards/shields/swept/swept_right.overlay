@@ -43,8 +43,6 @@
         scroll;
         natural-scroll-x;
 
-        zoom;
-
         bottom-beta = <15>;
         stationary-threshold = <5>;
 
