@@ -68,6 +68,8 @@
             label = "Quote tap-dance";
             #binding-cells = <0>;
             bindings = <&mt GRAVE SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
+
+            tapping-term-ms = <100>;
         };
     };
 
