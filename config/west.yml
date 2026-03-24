@@ -9,7 +9,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: ac7f75b8591d39aaf3b66b9d26f26c9ed921a009
+      revision: main
       import: app/west.yml
     - name: zmk-driver-azoteq-iqs5xx
       remote: TooManyLs
