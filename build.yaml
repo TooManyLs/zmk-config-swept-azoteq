@@ -19,14 +19,14 @@
 #
 ---
 include:
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: swept_dongle dongle_screen
     artifact-name: dongle-screen
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: swept_left
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: swept_right
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: settings_reset
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: settings_reset
